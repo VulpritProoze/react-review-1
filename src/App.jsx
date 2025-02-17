@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="min-h-screen font-poppins text-sm text-slate-300">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <div className="w-full">
           {errorMessages.map((msg) => (
